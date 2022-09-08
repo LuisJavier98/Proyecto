@@ -180,7 +180,21 @@ font-size: 30px;
    text-align: center;
  }
 /*********************************************************************/
- @media (max-width:376px){
+
+
+
+@media (min-width:550px){
+   .navegacion{
+      font-size: 14px;
+   }
+}
+@media (max-width:450px){
+   .navegacion{
+      font-size: 10px;
+   }
+}
+
+@media (max-width:376px){
    body{
       font-size: 12px;
       font-weight: normal;
