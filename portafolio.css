@@ -29,7 +29,7 @@ h1{
 }
 .btn-open{
    text-align: end  ;
-   padding-right: 30px;
+   padding-right: 10vw;
    margin-top :50px;
    margin-bottom: 0px;
 }
@@ -224,6 +224,7 @@ font-size: 30px;
    }
   
    .navegacion{
+      font-size: 12px;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -271,6 +272,9 @@ font-size: 30px;
       font-weight: normal;
       overflow-x: hidden;
    }
+   .navegacion{
+      font-size: 10px;
+     }
    h1{
       font-size: 20px;
       font-weight: bold;
@@ -290,6 +294,9 @@ font-size: 30px;
       font-weight: normal;
       overflow-x: hidden;
        }
+       .navegacion{
+         font-size: 8px;
+        }
       .intro{
       font-size: 12px;
       }
@@ -304,6 +311,30 @@ font-size: 30px;
       }
       
       }
+      @media (max-width:180px){
+         body{
+         font-size: 6px;
+         font-weight: normal;
+         overflow-x: hidden;
+          }
+          .navegacion{
+           font-size: 6px;
+          }
+         .intro{
+         font-size: 8px;
+         }
+         h1{
+            font-size: 10px;
+            font-weight: bold;
+      
+         }
+         .subtitulo{
+            font-size :7px; 
+            font-weight:normal; 
+         }
+         }
+
+
  @media (min-width:376px){
    .navegacion div:first-child{
        display: none;
