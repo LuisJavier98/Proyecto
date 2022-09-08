@@ -40,9 +40,10 @@ h1{
    margin : 20px 20px 50px 0px ;
    gap: 3% ;
    font-size: 12px;
-   
 }
-
+.navegacion div{
+   cursor: pointer; 
+}
 
 /********* HEADER *******************************************************/
 .informacion {
@@ -64,9 +65,10 @@ font-size: 30px;
  display: flex;
  justify-content: space-around;
  max-width: 100%;
+ gap: 5%;
 }
 .imagenes img{
-   max-width: 30%;
+   max-width: 20vw;
 }
 .resumen{
    text-align: center;
@@ -100,7 +102,7 @@ font-size: 30px;
    border-radius: 100px;
    background-color: #adadad25;
    margin: 10%;
-   max-width:100%;
+   max-width :70vw;;
  }
  .imagenesH img{
   justify-self: center;
@@ -168,7 +170,7 @@ font-size: 30px;
    margin: 0px 10%;
  }
  .imagenesU img{
-   max-width: 100%;
+   max-width: 30vw;
    padding: 10%;
    border: 1px solid white;
    border-radius: 100px;
@@ -193,6 +195,12 @@ font-size: 30px;
    .subtitulo{
       font-size :25px; 
       font-weight:normal; 
+   }
+   .informacion{
+      margin: 0%;
+   }
+   .skills{
+      margin: 0%;
    }
    .intro{
       font-size: 18px;
@@ -244,6 +252,9 @@ font-size: 30px;
       text-align: left;
       margin: 2% 12.5%;
    } 
+   .imagenesU{
+      margin: 0%;
+   }
 
    /*****************script*********************/
    .navegacion.active{
@@ -254,6 +265,45 @@ font-size: 30px;
    /********************************************/
 
  }
+ @media (max-width:270px){
+   body{
+      font-size: 10px;
+      font-weight: normal;
+      overflow-x: hidden;
+   }
+   h1{
+      font-size: 20px;
+      font-weight: bold;
+
+   }
+   .intro{
+      font-size: 15px;}
+
+   .subtitulo{
+      font-size :12px; 
+      font-weight:normal; 
+   }}
+
+   @media (max-width:200px){
+      body{
+      font-size: 8px;
+      font-weight: normal;
+      overflow-x: hidden;
+       }
+      .intro{
+      font-size: 12px;
+      }
+      h1{
+         font-size: 15px;
+         font-weight: bold;
+   
+      }
+      .subtitulo{
+         font-size :10px; 
+         font-weight:normal; 
+      }
+      
+      }
  @media (min-width:376px){
    .navegacion div:first-child{
        display: none;
