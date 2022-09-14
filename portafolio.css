@@ -9,20 +9,22 @@ body{
    position: relative;
 
 }
-
+:root{
+   --coloresprincipal:white;
+   --margenlateral:5vw
+}
 h1{
    font-size:  50px  ;
    text-align: center;
    font-weight:bold;
-   color: #FFFFFF;
-   margin: 10px 0px;
+   color: var(--coloresprincipal);
 }
 .subtitulo{
    text-align: center;
    margin: 10px;
    font-size: 30px ;
    font-weight: bold;
-   color: #FFFFFF;
+   color: var(--coloresprincipal);
 }
 .bx   {
    cursor: pointer;
@@ -37,12 +39,16 @@ h1{
 .navegacion{
    display: flex;
    justify-content: end;
-   margin : 20px 20px 50px 0px ;
+   margin : 20px var(--margenlateral) 50px 0px ;
    gap: 3% ;
    font-size: 12px;
 }
 .navegacion div{
    cursor: pointer; 
+}
+.mn:hover{
+   color: rgb(104, 122, 141);
+   font-size: 14px;
 }
 
 /********* HEADER *******************************************************/
@@ -50,7 +56,7 @@ h1{
    display: flex;
    flex-direction: column;
    align-items: center ;
-   margin: 20px 12.5% 60px;
+   margin: 20px var(--margenlateral);
 }
 .informacion div:first-child{
    margin: 20px 12.5% 60px;
@@ -70,18 +76,23 @@ font-size: 30px;
 .imagenes img{
    max-width: 20vw;
 }
+.imagenes img:hover{
+   transform: scale(0.75);
+}
 .resumen{
    text-align: center;
-   margin: 0px 12.5% 50px;
  }
+.about{
+   margin: 0px var(--margenlateral);
+}
 
- .skills{
-   margin: 20px 12.5% 60px;
- }
 /*********************************************************************/
 
 /********* HABILIDADES *******************************************************/
 
+.skills{
+   margin: 20px 12.5% 60px;
+ }
  .habilidades{
    text-align: center;
 
