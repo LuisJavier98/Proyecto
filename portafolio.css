@@ -1,88 +1,103 @@
-body{
+body {
    background-color: #020403;
    color: #adadad;
    font-size: 16px;
    font-weight: normal;
    max-width: 1024px;
    margin: 0 auto;
-   height: auto;  
+   height: auto;
    position: relative;
 
 }
-:root{
-   --coloresprincipal:white;
-   --margenlateral:5vw
+
+:root {
+   --coloresprincipal: white;
+   --margenlateral: 5vw
 }
-h1{
-   font-size:  50px  ;
+
+h1 {
+   font-size: 50px;
    text-align: center;
-   font-weight:bold;
-   color: var(--coloresprincipal);
-}
-.subtitulo{
-   text-align: center;
-   margin: 10px;
-   font-size: 30px ;
    font-weight: bold;
    color: var(--coloresprincipal);
 }
-.bx   {
+
+.subtitulo {
+   text-align: center;
+   margin: 10px;
+   font-size: 30px;
+   font-weight: bold;
+   color: var(--coloresprincipal);
+}
+
+.bx {
    cursor: pointer;
 }
-.btn-open{
-   text-align: end  ;
+
+.btn-open {
+   text-align: end;
    padding-right: 10vw;
-   margin-top :50px;
+   margin-top: 50px;
    margin-bottom: 0px;
 }
 
-.navegacion{
+.navegacion {
    display: flex;
    justify-content: end;
-   margin : 20px var(--margenlateral) 50px 0px ;
-   gap: 3% ;
+   margin: 20px var(--margenlateral) 50px 0px;
+   gap: 3%;
    font-size: 12px;
 }
-.navegacion div{
-   cursor: pointer; 
+
+.navegacion div {
+   cursor: pointer;
 }
-.mn:hover{
+
+.mn:hover {
    color: rgb(104, 122, 141);
-   font-size: 14px;
+   transform: scale(0.9);
 }
 
 /********* HEADER *******************************************************/
 .informacion {
    display: flex;
    flex-direction: column;
-   align-items: center ;
+   align-items: center;
    margin: 20px var(--margenlateral);
 }
-.informacion div:first-child{
+
+.informacion div:first-child {
    margin: 20px 12.5% 60px;
 }
-img[src*=Rectangle]{
+
+img[src*=Rectangle] {
    width: 100%
 }
-.intro{
-font-size: 30px;
+
+.intro {
+   font-size: 30px;
 }
-.imagenes{
- display: flex;
- justify-content: space-around;
- max-width: 100%;
- gap: 5%;
+
+.imagenes {
+   display: flex;
+   justify-content: space-around;
+   max-width: 100%;
+   gap: 5%;
 }
-.imagenes img{
+
+.imagenes img {
    max-width: 20vw;
 }
-.imagenes img:hover{
+
+.imagenes img:hover {
    transform: scale(0.75);
 }
-.resumen{
+
+.resumen {
    text-align: center;
- }
-.about{
+}
+
+.about {
    margin: 0px var(--margenlateral);
 }
 
@@ -90,170 +105,205 @@ font-size: 30px;
 
 /********* HABILIDADES *******************************************************/
 
-.skills{
+.skills {
    margin: 20px 12.5% 60px;
- }
- .habilidades{
+}
+
+.habilidades {
    text-align: center;
+}
 
- }
- .imagenesH{
+.imagenesH {
    display: grid;
-   grid-template-columns: repeat(2,1fr);
- }
- .id{
-   display: flex;
-   flex-direction: column; 
-   align-items: center;
+   grid-template-columns: repeat(2, 1fr);
+}
 
- }
- .id img{
+.id {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.id img {
    padding: 10%;
    border: 1px solid #020403;
    border-radius: 100px;
    background-color: #adadad25;
    margin: 10%;
-   max-width :70vw;;
- }
- .imagenesH img{
-  justify-self: center;
- }
- .imagenesH div{
+   max-width: 70vw;
+   ;
+}
+.id img:hover{
+transform: rotate(1turn);
+transition: all 1s;
+
+}
+.imagenesH img {
+   justify-self: center;
+}
+
+.imagenesH div {
    display: flex;
    justify-content: center;
    align-items: center;
- }
- /*********************************************************************/
+}
+
+/*********************************************************************/
 
 /********* EXPERIENCIA *******************************************************/
 
- .experiencia{
-    margin: 20px 12.5% 50px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows:repeat(2,1fr);
-    justify-content: center; 
-    background-color: #020403;
- }
- .experiencia div{
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;
-    border-bottom: 1px solid #adadad26 ;
- }
- .letra{
-   color: white;
- }
+.experiencia {
+   margin: 20px 12.5% 50px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   justify-content: center;
+   background-color: #020403;
+}
 
- /*********************************************************************/
+.experiencia div {
+   display: flex;
+   justify-content: left;
+   align-items: flex-end;
+   border-bottom: 1px solid #adadad26;
+}
+
+.letra {
+   color: white;
+}
+
+/*********************************************************************/
 
 /********* PORTAFOLIO *******************************************************/
 
- .imagenesP img{
+.imagenesP img {
    box-sizing: border-box;
-    max-width: 25%;
-    
- }
- .imagenesP {
-    display:flex;
-    justify-content: space-evenly;
-    margin: 5px 0%;
- }
-  /*********************************************************************/
+   max-width: 25%;
+   
+
+}
+.imagenesP img:hover{
+   transform: scale(1.5);
+   width: 100vw;
+}
+
+.imagenesP {
+   display: flex;
+   justify-content: space-evenly;
+   margin: 5px 0%;
+}
+
+/*********************************************************************/
 
 /********* FOOTER *******************************************************/
-.contacto{
+.contacto {
    text-align: center;
    margin: 30px 12.5% 30px;
- }
- 
- .pie img{
+}
+
+.pie img {
    align-self: center;
    justify-self: center;
- }
+}
 
- .imagenesU{
+.imagenesU {
    display: grid;
-   grid-template-columns: repeat(2,1fr);
+   grid-template-columns: repeat(2, 1fr);
    grid-template-rows: 3fr 1fr 1fr;
    grid-gap: 1%;
    justify-items: center;
    margin: 0px 10%;
- }
- .imagenesU img{
+}
+
+.imagenesU img {
    max-width: 30vw;
    padding: 10%;
    border: 1px solid white;
    border-radius: 100px;
- }
- .block__ultimo{
+}
+
+.block__ultimo {
    margin: 30px 0px;
    text-align: center;
- }
+}
+
 /*********************************************************************/
 
 
 
-@media (min-width:550px){
-   .navegacion{
+@media (min-width:550px) {
+   .navegacion {
       font-size: 14px;
    }
 }
-@media (max-width:450px){
-   .navegacion{
+
+@media (max-width:450px) {
+   .navegacion {
       font-size: 10px;
    }
 }
 
-@media (max-width:376px){
-   body{
+@media (max-width:376px) {
+   body {
       font-size: 12px;
       font-weight: normal;
       overflow-x: hidden;
-   
+
    }
-   h1{
+
+   h1 {
       font-size: 30px;
       font-weight: bold;
 
    }
-   .subtitulo{
-      font-size :25px; 
-      font-weight:normal; 
-   }
-   .informacion{
-      margin: 0%;
-   }
-   .skills{
-      margin: 0%;
-   }
-   .intro{
-      font-size: 18px;
-      }
 
-   .imagenesH{
+   .subtitulo {
+      font-size: 25px;
+      font-weight: normal;
+   }
+
+   .informacion {
+      margin: 0%;
+   }
+
+   .skills {
+      margin: 0%;
+   }
+
+   .intro {
+      font-size: 18px;
+   }
+
+   .imagenesH {
       display: flex;
       flex-direction: column;
    }
-   .imagenesP{
+
+   .imagenesP {
       display: flex;
       flex-direction: column;
       align-items: center;
       font-size: 0;
    }
-   .imagenesP img{
+
+   .imagenesP img:hover{
+      transform: scale(1.3);
+      width: 100vw;
+   }
+
+   .imagenesP img {
       display: block;
       min-width: 75%;
       margin: 2% 12.5%;
       font-size: 0;
    }
-  
-   .navegacion{
+
+   .navegacion {
       font-size: 12px;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      align-items:flex-end;
+      align-items: flex-end;
       justify-content: flex-start;
       gap: 5vh;
       padding-right: 5vw;
@@ -261,110 +311,129 @@ font-size: 30px;
       width: 100%;
       margin: 0px;
       position: absolute;
-      min-height: 100% ;
+      min-height: 100%;
       top: 0px;
-      left:100vw;
-      background-color:#020403;   
+      left: 100vw;
+      background-color: #020403;
       border-left: 5px solid #adadad78;
-      border-radius: 5% ;
-      transition-property:left;
+      border-radius: 5%;
+      transition-property: left;
       transition-duration: 1s;
-      
+
    }
-   .contacto{
-     text-align:start;
+
+   .contacto {
+      text-align: start;
    }
-   .portafolio{
+
+   .portafolio {
       text-align: left;
       margin: 2% 12.5%;
-   } 
-   .imagenesU{
+   }
+
+   .imagenesU {
       margin: 0%;
    }
 
    /*****************script*********************/
-   .navegacion.active{
+   .navegacion.active {
       position: absolute;
       left: 0px;
    }
 
    /********************************************/
 
- }
- @media (max-width:270px){
-   body{
+}
+
+@media (max-width:270px) {
+   body {
       font-size: 10px;
       font-weight: normal;
       overflow-x: hidden;
    }
-   .navegacion{
+
+   .navegacion {
       font-size: 10px;
-     }
-   h1{
+   }
+
+   h1 {
       font-size: 20px;
       font-weight: bold;
 
    }
-   .intro{
-      font-size: 15px;}
 
-   .subtitulo{
-      font-size :12px; 
-      font-weight:normal; 
-   }}
+   .intro {
+      font-size: 15px;
+   }
 
-   @media (max-width:200px){
-      body{
+   .subtitulo {
+      font-size: 12px;
+      font-weight: normal;
+   }
+}
+
+@media (max-width:200px) {
+   body {
       font-size: 8px;
       font-weight: normal;
       overflow-x: hidden;
-       }
-       .navegacion{
-         font-size: 8px;
-        }
-      .intro{
-      font-size: 12px;
-      }
-      h1{
-         font-size: 15px;
-         font-weight: bold;
-   
-      }
-      .subtitulo{
-         font-size :10px; 
-         font-weight:normal; 
-      }
-      
-      }
-      @media (max-width:180px){
-         body{
-         font-size: 6px;
-         font-weight: normal;
-         overflow-x: hidden;
-          }
-          .navegacion{
-           font-size: 6px;
-          }
-         .intro{
-         font-size: 8px;
-         }
-         h1{
-            font-size: 10px;
-            font-weight: bold;
-      
-         }
-         .subtitulo{
-            font-size :7px; 
-            font-weight:normal; 
-         }
-         }
-
-
- @media (min-width:376px){
-   .navegacion div:first-child{
-       display: none;
    }
-   .btn-open{
+
+   .navegacion {
+      font-size: 8px;
+   }
+
+   .intro {
+      font-size: 12px;
+   }
+
+   h1 {
+      font-size: 15px;
+      font-weight: bold;
+
+   }
+
+   .subtitulo {
+      font-size: 10px;
+      font-weight: normal;
+   }
+
+}
+
+@media (max-width:180px) {
+   body {
+      font-size: 6px;
+      font-weight: normal;
+      overflow-x: hidden;
+   }
+
+   .navegacion {
+      font-size: 6px;
+   }
+
+   .intro {
+      font-size: 8px;
+   }
+
+   h1 {
+      font-size: 10px;
+      font-weight: bold;
+
+   }
+
+   .subtitulo {
+      font-size: 7px;
+      font-weight: normal;
+   }
+}
+
+
+@media (min-width:376px) {
+   .navegacion div:first-child {
       display: none;
    }
- }
+
+   .btn-open {
+      display: none;
+   }
+}
